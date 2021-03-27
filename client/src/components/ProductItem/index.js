@@ -14,7 +14,6 @@ function ProductItem(item) {
     quantity
   } = item;
 
-  //const [state, dispatch] = useStoreContext();
   const dispatch= useDispatch();
   const state= useSelector(state=>{
     return state;

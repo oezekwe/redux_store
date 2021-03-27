@@ -15,7 +15,6 @@ import { QUERY_PRODUCTS } from "../utils/queries";
 import spinner from '../assets/spinner.gif'
 
 function Detail() {
-  //const [state, dispatch] = useStoreContext();
   const dispatch= useDispatch();
   const state= useSelector(state=>{
     return state;

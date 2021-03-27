@@ -6,7 +6,6 @@ import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../../utils/actions'
 import { QUERY_CATEGORIES } from "../../utils/queries";
 
 function CategoryMenu() {
-  //const [state, dispatch] = useStoreContext();
   const dispatch= useDispatch();
   const state= useSelector(state=>{
     return state;
