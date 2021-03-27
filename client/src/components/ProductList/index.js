@@ -1,15 +1,19 @@
 import React, { useEffect } from "react";
 import { useQuery } from '@apollo/react-hooks';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { idbPromise } from "../../utils/helpers";
-import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import ProductItem from "../ProductItem";
 import { QUERY_PRODUCTS } from "../../utils/queries";
 import spinner from "../../assets/spinner.gif"
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
+  //const [state, dispatch] = useStoreContext();
+  const dispatch= useDispatch();
+  const state= useSelector(state=>{
+    return state;
+  });
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
